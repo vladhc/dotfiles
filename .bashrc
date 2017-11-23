@@ -148,3 +148,4 @@ export PATH="$HOME/.local/bin/miniconda3/bin:$PATH"
 
 # For storing dotfiles in git repository
 alias config="/usr/bin/git --git-dir=$HOME/.config-repo/ --work-tree=$HOME"
+source ".bashrc-freiheit"

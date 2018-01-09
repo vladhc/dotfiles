@@ -46,11 +46,6 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-let g:dbext_default_profile_wh_local = 'type=ODBC:dsnname=ILYA:user=ILYA\Server:passwd=twd8742r0,.324v4#r%%SAFFSDoi9[blhm:dbname=wh_data_test'
-let g:dbext_default_profile_accounting = 'type=MYSQL:user=root:passwd=:dbname=accounting:port=33061:host=127.0.0.1'
-let g:dbext_default_profile_prestashop = 'type=MYSQL:user=root:passwd=nhq4@Fy:dbname=kindersport_presta:port=33062:host=127.0.0.1'
-let g:dbext_default_profile_platformdb = 'type=MYSQL:user=root:passwd=nhq4@Fy:dbname=platformdb:port=33062:host=127.0.0.1'
-
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2

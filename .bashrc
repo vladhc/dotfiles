@@ -119,8 +119,9 @@ if ! shopt -oq posix; then
 fi
 
 export GOROOT=/usr/local/go
+export PATH="$GOROOT/bin:$PATH"
 
-export NVM_DIR="/home/vladimir/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 if [ "$TERM" == "xterm" ]; then
@@ -144,8 +145,12 @@ source <(kubectl completion bash)
 xrdb ~/.Xresources
 
 # added by Miniconda3 4.3.21 installer
-export PATH="$HOME/.local/bin/miniconda3/bin:$PATH"
+export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
+
+# Tensorflow Hub cache directory
+export TFHUB_CACHE_DIR=/opt/tensorflow_hub
 
 # For storing dotfiles in git repository
 alias config="/usr/bin/git --git-dir=$HOME/.config-repo/ --work-tree=$HOME"
-source ".bashrc-freiheit"
+
+source ".bashrc-personal"

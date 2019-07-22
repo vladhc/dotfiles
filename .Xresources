@@ -14,4 +14,4 @@ XTerm*pointerColor: white
 XTerm*pointerColorBackground: black
 XTerm*cursorBlink: true
 
-#include "/home/vladimir/.Xresources.dark"
+#include ".Xresources.dark"

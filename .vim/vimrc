@@ -184,4 +184,5 @@ endfun
 
 " nvim specific settings
 if has('nvim')
+  let g:python3_host_prog = $CONDA_HOME.'/bin/python3.6'
 endif

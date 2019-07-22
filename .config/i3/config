@@ -170,7 +170,7 @@ assign [class="Gvim"] Edit
 assign [title="Telegram"] Chat
 assign [title="Slack"] Chat
 
-exec --no-startup-id "setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle -option compose:ralt"
+exec --no-startup-id "setxkbmap -model pc105 -layout us,ru -option grp:shifts_toggle"
 exec --no-startup-id "google-chrome"
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown

@@ -32,7 +32,7 @@ set list
 set listchars=tab:▸\ ,eol:¬
 
 set laststatus=2
-set statusline=%.25F\ %{fugitive#statusline()}\ %l/%L
+set statusline=%{hostname()}\ %.25F\ %{fugitive#statusline()}\ %l/%L
 
 nnoremap <up> <nop>
 nnoremap <down> <nop>

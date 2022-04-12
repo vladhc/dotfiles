@@ -173,6 +173,7 @@ assign [title="Slack"] Chat
 exec --no-startup-id "setxkbmap -model pc105 -layout us,ru -option grp:shifts_toggle"
 exec --no-startup-id "google-chrome"
 exec --no-startup-id "nm-applet"
+exec --no-startup-id "xrdb $HOME/.Xresources"
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {

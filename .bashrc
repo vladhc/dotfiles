@@ -137,8 +137,5 @@ alias vim="nvim"
 # Disable close terminal on Ctrl-D
 set -o ignoreeof
 
-# Restore colors and fonts
-xrdb ~/.Xresources
-
 # For storing dotfiles in git repository
 alias config="/usr/bin/git --git-dir=$HOME/.config-repo/ --work-tree=$HOME"

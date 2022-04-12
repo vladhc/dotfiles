@@ -118,8 +118,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export GOROOT=/usr/local/go
-export PATH="$GOROOT/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -138,19 +137,8 @@ alias vim="nvim"
 # Disable close terminal on Ctrl-D
 set -o ignoreeof
 
-# Kubernetes autocompletition
-source <(kubectl completion bash)
-
 # Restore colors and fonts
 xrdb ~/.Xresources
 
-# added by Miniconda3 4.3.21 installer
-export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
-
-# Tensorflow Hub cache directory
-export TFHUB_CACHE_DIR=/opt/tensorflow_hub
-
 # For storing dotfiles in git repository
 alias config="/usr/bin/git --git-dir=$HOME/.config-repo/ --work-tree=$HOME"
-
-source ".bashrc-personal"

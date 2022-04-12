@@ -4,23 +4,10 @@ call minpac#init()
 call minpac#add('ctrlpvim/ctrlp.vim')
 call minpac#add('tpope/vim-fugitive')
 call minpac#add('flazz/vim-colorschemes')
+call minpac#add('neovim/nvim-lspconfig')
 
 " Python folding
 " call minpac#add('tmhedberg/SimpylFold')
-" Python language server
-call minpac#add('autozimu/LanguageClient-neovim')
-
-call minpac#add('fatih/vim-go')
-
-" Python language server
-let g:LanguageClient_serverCommands = {
-      \ 'go': ['/home/vladhc/projects/golang/bin/go-langserver'],
-      \ 'python': ['/home/vladhc/.local/bin/miniconda3/bin/pyls'],
-\ }
-nnoremap <F5> :call LanguageClient_contextMenu()<CR>
-autocmd FileType python nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
-autocmd FileType python nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
-autocmd FileType python nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
 set tabstop=2
 set shiftwidth=2
@@ -99,8 +86,12 @@ highlight lCursor guifg=NONE guibg=Cyan
 " Don't give the intro message when starting Vim
 set shortmess+=I
 
-let g:python3_host_prog = '/home/vladhc/.local/bin/miniconda3/bin/python3.6'
+let g:python3_host_prog = '/usr/bin/python'
 let g:deoplete#enable_at_startup = 1
 
 " Map <Esc> to exit terminal-mode
 tnoremap <Esc> <C-\><C-n>
+
+lua << EOF
+require('lspconfig').pylsp.setup({})
+EOF

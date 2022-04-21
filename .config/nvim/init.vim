@@ -55,6 +55,8 @@ nnoremap <C-H> <C-W><C-H> "Ctrl-h to move left a split
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
 
+nnoremap Y Y
+
 colorscheme molokai
 
 set guifont=Monospace\ 15
@@ -95,3 +97,6 @@ tnoremap <Esc> <C-\><C-n>
 lua << EOF
 require('lspconfig').pylsp.setup({})
 EOF
+
+" DVC
+autocmd! BufNewFile,BufRead Dvcfile,*.dvc,dvc.lock setfiletype yaml

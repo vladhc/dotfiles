@@ -6,9 +6,6 @@ call minpac#add('tpope/vim-fugitive')
 call minpac#add('flazz/vim-colorschemes')
 call minpac#add('neovim/nvim-lspconfig')
 
-" Python folding
-" call minpac#add('tmhedberg/SimpylFold')
-
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2

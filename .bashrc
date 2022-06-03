@@ -138,3 +138,7 @@ set -o ignoreeof
 
 # For storing dotfiles in git repository
 alias config="/usr/bin/git --git-dir=$HOME/.config-repo/ --work-tree=$HOME"
+
+if [ -f ~/.bashrc-local ]; then
+  source "$HOME/.bashrc-personal"
+fi

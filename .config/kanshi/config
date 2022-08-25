@@ -1,0 +1,8 @@
+profile {
+	output "Unknown 0x06AA 0x00000000" disable
+	output "Dell Inc. Dell U4919DW JVP0XP2" mode 5120x1440 position 0,0
+}
+
+profile {
+	output "Unknown 0x06AA 0x00000000" enable mode 3840x2400 position 0,0
+}

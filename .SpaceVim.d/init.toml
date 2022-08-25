@@ -31,6 +31,10 @@ auto_completion_return_key_behavior = "complete"
 auto_completion_tab_key_behavior = "smart"
 
 [[layers]]
+name = "debug"
+debugger_plugin = "vimspector"
+
+[[layers]]
 name = 'shell'
 default_position = 'top'
 default_height = 30
@@ -42,4 +46,10 @@ enable_typeinfo = true
 
 [[layers]]
 name = "lsp"
-enabled_clients = ['pyright']
+enabled_clients = ['pyright', 'gopls']
+
+[[layers]]
+name = "lang#go"
+enabled_linters = ['go']
+format_on_save = true
+go_file_head = ['']

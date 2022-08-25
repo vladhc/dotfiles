@@ -1,0 +1,10 @@
+[Unit]
+Description=Kanshi dynamic display configuration
+BindsTo=sway-session.target
+After=sway-session.target
+
+[Service]
+ExecStart=/usr/bin/kanshi
+
+[Install]
+WantedBy=sway-session.target

@@ -38,7 +38,7 @@ bindsym $mod+Return exec $term
 bindsym $mod+Shift+c kill
 
 # start dmenu (a program launcher)
-set $menu "rofi -modi 'run,drun' -show-icons -show run"
+set $menu "rofi -modi 'run,drun' -show-icons -show drun"
 bindsym $mod+d exec $menu
 
 # There also is the (new) i3-dmenu-desktop which only displays applications

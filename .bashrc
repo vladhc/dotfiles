@@ -131,6 +131,9 @@ export PAGER=most
 export EDITOR=vim
 alias vim="nvim"
 
+# Used by spacevim
+export PYTHON3_HOST_PROG=/usr/bin/python
+
 # Disable close terminal on Ctrl-D
 set -o ignoreeof
 

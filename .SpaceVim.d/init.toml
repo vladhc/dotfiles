@@ -46,7 +46,7 @@ enable_typeinfo = true
 
 [[layers]]
 name = "lsp"
-enabled_clients = ['pyls', 'gopls']
+enabled_clients = ['pyright', 'gopls']
 
 [[layers]]
 name = "lang#go"

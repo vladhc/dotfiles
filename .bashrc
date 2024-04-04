@@ -146,3 +146,4 @@ BASHRC_LOCAL="$HOME/.bashrc-${HOSTNAME}"
 if [ -f $BASHRC_LOCAL ]; then
   source "$BASHRC_LOCAL"
 fi
+export PYTHONBREAKPOINT="pudb.set_trace"

@@ -23,6 +23,13 @@
     buffer_index_type = 4
     enable_tabline_filetype_icon = true
     enable_statusline_mode = false
+    project_rooter_patterns = ['package.json', '.git/']
+    project_rooter_outermost = false
+    project_auto_root = false
+
+[[layers]]
+name = "checkers"
+lint_on_the_fly = true
 
 # Enable autocomplete layer
 [[layers]]
@@ -55,6 +62,9 @@ enable = false
 [[layers]]
 name = "lang#ruby"
 enable = false
+
+[[layers]]
+name = "lang#typescript"
 
 [[layers]]
 name = "VersionControl"

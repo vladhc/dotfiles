@@ -32,3 +32,4 @@ PROFILE_LOCAL="$HOME/.profile-${HOSTNAME}"
 if [ -f $PROFILE_LOCAL ]; then
   source "$PROFILE_LOCAL"
 fi
+. "$HOME/.cargo/env"
